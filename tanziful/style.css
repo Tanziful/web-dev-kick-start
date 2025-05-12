@@ -1,0 +1,16 @@
+.box{
+border: 3px solid black;
+border-radius: 10px;
+padding: 10px;
+background-color: rgb(236, 229, 218);
+}
+.flex-box{
+    display:flex;
+    gap: 10px;
+    background-color: rgb(191, 193, 233);
+}
+.Heading{
+    text-align: center;
+    border: 1px solid blue;
+    background-color: rgb(191, 193, 233);
+}
