@@ -1,16 +1,95 @@
-.box{
-border: 3px solid black;
-border-radius: 10px;
-padding: 10px;
-background-color: rgb(236, 229, 218);
+.box {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(236, 229, 218);
 }
-.flex-box{
-    display:flex;
+
+.flex-box {
+    display: flex;
     gap: 10px;
     background-color: rgb(191, 193, 233);
 }
-.Heading{
+
+.Heading {
     text-align: center;
     border: 1px solid blue;
     background-color: rgb(191, 193, 233);
 }
+
+nav {
+    background-color: rgb(191, 193, 233);
+    padding: 10px 0;
+    /* Top and bottom padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+nav ul li {
+  /* No extra style needed here now */
+}
+
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #4a6fa5;
+    color: white;
+    border-radius: 5px 5px 0 0;
+  }
+   th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+    th {
+    background-color: #4a6fa5;
+    color: white;
+    font-weight: bold;
+  }
+    tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  tbody tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  tfoot td {
+    background-color: #4a6fa5;
+    color: white;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  /* Responsive adjustments */
+  /* @media (max-width: 768px) {
+    th, td {
+      padding: 8px 10px;
+      font-size: 0.9em;
+    }
+  } */
+  
+  /* @media (max-width: 480px) {
+    th, td {
+      padding: 6px 8px;
+      font-size: 0.8em;
+    } */
