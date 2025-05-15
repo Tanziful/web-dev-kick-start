@@ -122,52 +122,110 @@
     </nav>
 
     <!-- Exercise: Create a table displaying a weekly schedule. -->
-     <div class="table-container">
-    <table border="1">
-        <caption><strong>weekly schedule</strong></caption>
-        <thead>
-            <tr>
-                <th rowspan="2">Employee Name</th>
-                <th colspan="7">Days of the Week</th>
-            <tr>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-                <th>Sun</th>
-            </tr>
-        <tbody>
-            <tr>
-                <td>Rahim</td>
+    <div class="table-container">
+        <table border="1">
+            <caption><strong>weekly schedule</strong></caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Employee Name</th>
+                    <th colspan="7">Days of the Week</th>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>Rahim</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>Off</td>
+                    <td>Off</td>
+                </tr>
+                <td>karim</td>
+                <td>9-5</td>
+                <td>off</td>
+                <td>9-5</td>
+                <td>off</td>
                 <td>9-5</td>
                 <td>9-5</td>
                 <td>9-5</td>
-                <td>9-5</td>
-                <td>9-5</td>
-                <td>Off</td>
-                <td>Off</td>
-            </tr>
-            <td>karim</td>
-            <td>9-5</td>
-            <td>off</td>
-            <td>9-5</td>
-            <td>off</td>
-            <td>9-5</td>
-            <td>9-5</td>
-            <td>9-5</td>
-            </thead>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="8">Shifts may vary based on business needs</td>
-            </tr>
-        </tfoot>
-    </table>
+                </thead>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">Shifts may vary based on business needs</td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
 
+    <!-- Exercise: Create a gallery page with at least 3 images, each with appropriate alt text. -->
+    <div>
+        <div class="gallary">
+            <div class="gallary-item">
+                <img src="https://images.unsplash.com/photo-1499202189329-5d76e29aa2b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D"
+                    width="300" height="200" alt="sea" class="gallary-image" />
+            </div>
+            <div class="image-caption">
+                <h3>Mountain Sunrise</h3>
+                <p>Beautiful alpine landscape at dawn</p>
+            </div>
+            <img src="./images/nature.jpg" width="300" height="200" />
+        </div>
 
+        <!-- video -->
+        <div>
+            <video class="video-wrapper">
+                <source src="./videos/movie.mp4" type="video/mp4" />
+                <source src="movie.webm" type="video/webm" />
+            </video>
+            <div class="controls">
+                <button onclick="playVideo()">▶️ play</button>
+                <button onclick="pauseVideo()">⏸️ stop</button>
+                <button onclick="restartVideo()">🔄 restart</button>
+            </div>
+        </div>
+        <!-- Audio -->
+        <div class="audio-player">
+
+            <audio controls>
+                <source src="./audio/sound.mp3" type="audio/mpeg">
+                <source src="./audio/sound.ogg" type="audio/ogg">
+            </audio>
+        </div>
+
+
+        <h1>Location &  YouTube Video Embed</h1>
+
+        <!--  Google Map Embed -->
+        <div class="iframe-container">
+            <h2> (Google Map)</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9025799320296!2d90.39127597412366!3d23.750885888904333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85c542fd5a3%3A0x6b7e99e64bb5d1c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1715709112345!5m2!1sen!2sbd"
+                width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <!-- YouTube Video Embed -->
+        <div class="iframe-container">
+            <h2> (YouTube)</h2>
+
+            <!-- রেসপনসিভ iframe wrapper -->
+            <div class="responsive-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kMUijDNYq_M?si=2Fwc1QW9M296VvOg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
